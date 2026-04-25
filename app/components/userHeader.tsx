@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const Header = () => {
+const userHeader = () => {
   return (
     <header className="border-b flex justify-between items-center h-14 px-4">
       <h1>
@@ -9,13 +9,11 @@ const Header = () => {
       </Link></h1>
       <nav className="flex ml-4">
         <li className='ml-4 list-none'><Link href="/contact">Contact</Link></li>
+        <li className='ml-4 list-none'><Link href="/logs">Logs</Link></li>
         <li className='ml-4 list-none'><Link href="/stats">Stats</Link></li>
-        <li className='ml-4 list-none'><Link href="/dashboard">ゲストユーザー</Link></li>
-        <li className='ml-4 list-none'><Link href="/auth/signup">新規登録</Link></li>
-        <li className='ml-4 list-none'><Link href="/auth/signin">ログイン</Link></li>
       </nav>
     </header>
   );
 };
 
-export default Header;
+export default userHeader;

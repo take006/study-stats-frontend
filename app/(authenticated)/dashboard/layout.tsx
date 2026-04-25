@@ -1,6 +1,5 @@
-// src/app/dashboard/layout.tsx
-import Docs from '../components/menuDocs';
-import SideMenu from '../components/sideMenu';
+﻿import Docs from '../../components/menuDocs';
+import SideMenu from '../../components/sideMenu';
 
 export default function DashboardLayout({
   children,
@@ -24,3 +23,4 @@ export default function DashboardLayout({
     </div>
   );
 }
+

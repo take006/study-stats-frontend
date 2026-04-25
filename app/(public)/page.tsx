@@ -1,14 +1,12 @@
 // src/app/page.tsx
 import Link from 'next/link'; // Link コンポーネントをインポート
-import Header from './components/header';
 
 export default function Home() {
   return (
     <>
-      <Header />
       <main>
 				<section className="relative overflow-hidden">
-					<div className="absolute inset-0 bg-gradient-to-b from-sky-50 via-white to-white"></div>
+					<div className="absolute inset-0 bg-linear-to-b from-sky-50 via-white to-white"></div>
 					<div className="relative mx-auto max-w-7xl px-6 py-16 md:py-24">
 						<div className="grid gap-10 md:grid-cols-2 md:items-center">
 							<div>
@@ -24,8 +22,8 @@ export default function Home() {
 								</p>
 								<div className="mt-7 flex flex-wrap items-center gap-3">
 										<Link href="/dashboard" className="rounded-full bg-sky-500 px-5 py-3 text-sm font-semibold text-white hover:bg-sky-600">ダッシュボードへ</Link>
-										<Link href="" className="rounded-full bg-sky-500 px-5 py-3 text-sm font-semibold text-white hover:bg-sky-600">無料で試す</Link>
-										<Link href="" className="rounded-full border border-slate-200 px-5 py-3 text-sm font-semibold text-slate-700 hover:border-slate-300">ログイン</Link>
+										<Link href="/guest" className="rounded-full bg-sky-500 px-5 py-3 text-sm font-semibold text-white hover:bg-sky-600">無料で試す</Link>
+										<Link href="/auth/signin" className="rounded-full border border-slate-200 px-5 py-3 text-sm font-semibold text-slate-700 hover:border-slate-300">ログイン</Link>
 								</div>
 								<div className="mt-8 grid grid-cols-3 gap-4 text-xs text-slate-500">
 									<div className="rounded-xl border border-slate-100 bg-white px-3 py-3">
@@ -62,7 +60,7 @@ export default function Home() {
 										<span className="text-slate-700 font-semibold">82%</span>
 									</div>
 									<div className="mt-3 h-2 w-full rounded-full bg-white">
-										<div className="h-2 w-4/5 rounded-full bg-gradient-to-r from-sky-400 to-orange-400"></div>
+										<div className="h-2 w-4/5 rounded-full bg-linear-to-r from-sky-400 to-orange-400"></div>
 									</div>
 								</div>
 							</div>
@@ -133,7 +131,7 @@ export default function Home() {
 										<span className="text-slate-800 font-semibold">+12.4%</span>
 									</div>
 									<div className="mt-3 h-2 w-full rounded-full bg-white">
-										<div className="h-2 w-2/3 rounded-full bg-gradient-to-r from-sky-400 to-orange-400"></div>
+										<div className="h-2 w-2/3 rounded-full bg-linear-to-r from-sky-400 to-orange-400"></div>
 									</div>
 								</div>
 							</div>
@@ -167,7 +165,7 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className="py-16 md:py-20 bg-gradient-to-r from-sky-50 via-white to-orange-50">
+				<section className="py-16 md:py-20 bg-linear-to-r from-sky-50 via-white to-orange-50">
 					<div className="mx-auto max-w-7xl px-6">
 						<div className="rounded-3xl border border-slate-100 bg-white px-6 py-10 shadow-sm md:px-10 md:py-12">
 							<div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
@@ -176,7 +174,7 @@ export default function Home() {
 									<p className="mt-2 text-sm text-slate-600">学習の履歴を資産に。継続できる環境を作ろう。</p>
 								</div>
 									<Link href="/dashboard" className="rounded-full bg-sky-500 px-6 py-3 text-sm font-semibold text-white hover:bg-sky-600">ダッシュボードへ</Link>
-									<Link href="" className="rounded-full bg-sky-500 px-6 py-3 text-sm font-semibold text-white hover:bg-sky-600">無料で登録</Link>
+									<Link href="/auth/signup" className="rounded-full bg-sky-500 px-6 py-3 text-sm font-semibold text-white hover:bg-sky-600">無料で登録</Link>
 							</div>
 						</div>
 					</div>

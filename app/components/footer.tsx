@@ -10,7 +10,6 @@ const Footer = () => {
       <nav className="flex ml-4"> 
         <li className='ml-4 list-none'><Link href="/">Service Top</Link></li>
         <li className='ml-4 list-none'><Link href="/contact">Contact</Link></li>
-        <li className='ml-4 list-none'><Link href="/stats">Stats</Link></li>
       </nav>
     </footer>
   );
